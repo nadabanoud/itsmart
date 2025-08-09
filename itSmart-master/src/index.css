@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap');
+@theme {
+  /* خلفيات */
+  --color-surface: #f0fcff;
+  --color-background: #111827;
+  /* ألوان رئيسية */
+  --color-primary: #0a6375;
+  --color-primary-light: #2fa2b9;
+  --color-primary-dark: #6ae4fd;
+  /* النصوص */
+  --color-text: #e6edf3;
+  --font-text: "Fira Sans", sans-serif;
+  --font-display:"Solway", sans-serif;
+  --font-display2:  "Corben", sans-serif;
+
+  /* مقاسات التجاوب */
+   --breakpoint-mobile:340px; /* أجهزة صغيرة*/
+  --breakpoint-sm:480px; /* أجهزة كبيرة*/
+  --breakpoint-md:768px; /* أجهزة لوحية*/
+  --breakpoint-lg:1024px; /* أجهزة محمولة*/
+  --breakpoint-xl:1330px; /* أجهزة مكتبية*/
+  
+} 
+body{
+  background-color: #111827;
+  color:#f0fcff ;
+  
+}
+.gradient-text{
+  background: #111827;
+  background: radial-gradient(ellipse farthest-corner at center center, #111827 40%, #0A6375 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  
+  
+  
+
+}
+.shadow {
+  /* box-shadow: -2px 4px 19px -2px rgba(10, 99, 117, 0.75); */
+}
+input::placeholder {
+  color: gray;
+  font-weight: 400;
+
+}
+.custom-glass {
+ /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.22);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.9px);
+
+}
+.navbar{
+  box-shadow: 8px 5px 13px 4px rgba(0, 0, 0, 0.829);
+  
+}
+/* .mySwiper{
+  width:80% ;
+  height: 50%;
+}
+@media (width >= 768px) {
+  .mySwiper{
+    width: 100%;
+    height: 80%;
+  }
+} */
