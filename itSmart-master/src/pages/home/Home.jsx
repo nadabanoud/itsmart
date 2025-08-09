@@ -1,14 +1,13 @@
-
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-cube';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay'; 
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 // import required modules
-import { EffectCube, Pagination, Autoplay } from 'swiper/modules';
+import { EffectCube, Pagination, Autoplay } from "swiper/modules";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
@@ -84,14 +83,14 @@ function Home() {
       </Swiper>
 
       {/* ection about */}
-      <section id="about" className="min-h-screen p-24 relative mt-12">
+      <section id="about" className="min-h-screen relative mt-22">
         <div className="lg:text-3xl text-center font-bold md:text-2xl sm:text-xl">
           ABOUT <span className="text-primary-light">U</span>S
         </div>
         <div className=" lg:mt-28 lg:flex lg:gap-12 lg:flex-row justify-center items-center md:mt-16 md:flex md:flex-col md:gap-8 sm:mt-16 sm:flex sm:flex-col sm:gap-8">
           <div className="flex flex-col gap-12 justify-center items-center mt-4">
             <div className="flex justify-center gap-5">
-              <div className="bg-text rounded-4xl w-44 h-10  flex justify-center items-center ">
+              <div className="bg-text rounded-4xl w-34 h-10  flex justify-center items-center ">
                 <FaArrowRightLong className="text-2xl text-primary-light" />
               </div>
               <p>
@@ -103,7 +102,7 @@ function Home() {
               </p>
             </div>
             <div className="flex justify-center gap-5">
-              <div className="bg-text rounded-4xl w-34 h-10 flex justify-center items-center ">
+              <div className="bg-text rounded-4xl w-26 h-10 flex justify-center items-center ">
                 <FaArrowRightLong className="text-2xl text-primary-light" />
               </div>
               <p>
@@ -130,11 +129,11 @@ function Home() {
       </section>
 
       {/* section contact */}
-      <section id="contact" className="min-h-screen p-24 relative mt-4">
+      <section id="contact" className="min-h-screen  relative mt-16">
         <div className="lg:text-3xl text-center font-bold md:text-2xl sm:text-xl">
           CONTACT <span className="text-primary-light">U</span>S
         </div>
-        <div className="lg:flex lg:flex-row justify-between lg:gap-5 lg:mt-22 md:mt-12  md:grid md:grid-cols-2 md:gap-3 sm:grid sm:grid-cols-1 sm:gap-3">
+        <div className="grid lg:grid-cols-4 lg:gap-5 lg:mt-22 md:mt-12 sm:grid-cols-2 justify-center items-center sm:gap-3">
           <div className="w-60 h-40 text-center flex justify-center mt-3">
             <div className="flex flex-col gap-6 text-center justify-center items-center">
               <FaLocationDot className="text-primary-dark lg:text-5xl md:text-3xl sm:text-2xl" />
@@ -162,42 +161,38 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="border-2 border-zinc-700 p-8 lg:mt-20 md:mt-10 sm:mt-10">
-          <div className=" lg:flex lg:flex-row lg:gap-18 justify-center items-center  md:flex md:flex-col md:gap-10 sm:flex sm:flex-col sm:gap-10">
-            <div>
-              <img
-                className="rounded"
-                width="400px"
-                height="200px"
-                src="../../../../public/images/contact.jpg"
-                alt=""
-              />
-            </div>
-            <div className="flex justify-between  gap-5 flex-col">
-              <input
-                placeholder="Your Name"
-                type="text"
-                className="w-full h-12 p-4 bg-white text-background border-2 border-primary-light "
-              />
-              <input
-                placeholder="Your Email"
-                type="text"
-                className="w-full h-12 p-4 bg-white text-background border-2 border-primary-light "
-              />
-              <input
-                placeholder="Subject"
-                type="text"
-                className="w-full h-12 p-4 bg-white text-background border-2 border-primary-light "
-              />
-              <input
-                placeholder="Message"
-                type="text"
-                className="w-full h-30 p-4 bg-white text-background border-2 border-primary-light "
-              />
-              <button className="font-normal px-6 py-1 w-fit h-12 bg-primary hover:bg-text hover:text-primary transition-all rounded-full">
-                Send Message
-              </button>
-            </div>
+        <div className="rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-primary/30 p-8 lg:mt-20 md:mt-10 sm:mt-10">
+          <div className="bg-background/50 rounded-2xl h-full flex justify-center items-center">
+            <img
+              className="rounded-2xl w-9/12 h-full object-contain"
+              src="../../../public/images/undraw_contact-us_kcoa.svg"
+              alt=""
+            />
+          </div>
+          <div className="flex justify-center items-center  gap-6 flex-col">
+            <input
+              placeholder="Your Name"
+              type="text"
+              className="w-full p-4 bg-white text-background border-2 border-primary-light "
+            />
+            <input
+              placeholder="Your Email"
+              type="text"
+              className="w-full p-4 bg-white text-background border-2 border-primary-light "
+            />
+            <input
+              placeholder="Subject"
+              type="text"
+              className="w-full p-4 bg-white text-background border-2 border-primary-light "
+            />
+            <textarea
+              placeholder="Message"
+              type="text"
+              className="w-full p-4 bg-white text-background border-2 border-primary-light "
+            />
+            <button className="font-normal px-6 py-1 mt-4 w-fit h-12 bg-text hover:bg-primary text-primary hover:text-text transition-all rounded-full">
+              Send Message
+            </button>
           </div>
         </div>
       </section>
